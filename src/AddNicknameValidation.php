@@ -39,7 +39,7 @@ class AddNicknameValidation
         $rules['nickname'] = [
             function ($attribute, $value, $fail) {
                 $regex = $this->settings->get('flarum-nicknames.regex');
-                if ($regex && ! preg_match_all("/$regex/", $value)) {
+                if ($regex && ! preg_match_all("$regex", $value)) {
                     $fail($this->translator->trans('flarum-nicknames.api.invalid_nickname_message'));
                 }
             },
