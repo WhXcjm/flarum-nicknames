@@ -2,3 +2,4 @@ flarum-nicknames:
   admin:
     settings:
       regex_help: 正则表达式应采用PHP格式。请完整地书写表达式，即内容包含在两个斜杠（/）之间。注意：允许使用中文乃至全部UTF-8编码时，表达式的末尾应使用'/u'替代最后一个斜杠。
+      regex_fail_notice_label: 正则匹配不成功时的提示
